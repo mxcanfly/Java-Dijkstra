@@ -1,9 +1,9 @@
-Java-Dijkstra
-=============
-基于Java实现的Dijkstra最短路径寻径的实现.
+基于Java实现的Dijkstra 最短路径的实现.
 
-public void demo1() {
-  	//声明点
+
+
+	public void demo1() {
+		//声明点
 		Point A = new MyPoint(1,0,0);
 		Point B = new MyPoint(2,0,0);
 		Point C = new MyPoint(3,0,0);
@@ -28,15 +28,10 @@ public void demo1() {
 		edges.add(new Edge(D, E, 4));
 		edges.add(new Edge(E, D, 6));
 		edges.add(new Edge(E, A, 7));
-		
 		Dijkstra d = new Dijkstra();
 		Stack<Point> points = d.dijkstra(source, edges, A, D);//提供 点的集合 边的集合 起点 终点 开始寻径
 		while (points.size() > 0) {
-			Point p = points.pop();
-			System.out.print(((MyPoint)p).getId()+">");//打印  打印结果: 1>3>2>4
-      
+			Point p = points.pop(); 
+			System.out.print(((MyPoint)p).getId()+">");//打印 打印结果 : 1>3>2>4
 		}
 	}
-  
-  
-  
