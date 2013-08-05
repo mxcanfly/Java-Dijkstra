@@ -1,0 +1,7 @@
+host=192.168.16.249
+dbName=NewICMS
+userName=mx
+userPwd=123
+udpserver=192.168.16.249
+pointTableName=map_point
+pathTableName=map_path
